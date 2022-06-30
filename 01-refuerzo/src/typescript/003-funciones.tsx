@@ -1,6 +1,6 @@
 const Funciones= ()=>{
     const sumar= (a:number,b:number)=>{
-        return 'hola mundo'
+        return a+b
     }
      return(
         <>
