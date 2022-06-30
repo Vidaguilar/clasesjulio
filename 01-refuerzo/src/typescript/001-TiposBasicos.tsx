@@ -23,7 +23,7 @@ const TiposBasicos = () =>{
       <p>COlor: {colores.join(', ')}</p>
       <p>Edad:{edad}</p>
       <p>Is:Activo:{isactivo?'Activo':'NoActivo'}</p>
-      <p>COlor: {poderes.join(', ')}</p>
+      <p>Poder: {poderes.join(', ')}</p>
       <p>sueldo:{sueldo}</p>
       <p>Puesto:{puesto}</p>
       <p>Domicilio:{Domicilio}</p>

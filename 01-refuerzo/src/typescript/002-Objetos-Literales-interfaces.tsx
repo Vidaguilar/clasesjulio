@@ -2,10 +2,7 @@ interface Persona{
     Nombre:string
     Apellido:string
     Edad:number
-    Direccion:{
-        estado:string
-        no:string
-    }
+    direccion:Direccion
 }
 
 interface Direccion{
@@ -26,6 +23,13 @@ const ObjetosLiterales=()=>{
     return(
         <>
         <h3>Objetos literales con interfaces</h3>
+        <pre>
+            {JSON.stringify(persona,null,1)}
+        </pre>
+        <p>Nombre: {persona.Nombre}</p>
+        <p>Apellido:{persona.Apellido}</p>
+        <p>edad:{persona.Edad }</p>
+        <p>Direccion:{persona.Direccion.estado},{persona.Direccion.no}</p>
         </>
     )
 }
