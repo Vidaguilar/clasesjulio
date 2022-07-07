@@ -15,8 +15,8 @@ const initialState:AuthState={
    nombre:'',
 }
 type LoginPayload={
-   username:'',
-   nombre:''
+   username:string,
+   nombre:string,
 }
 type AuthAction=
 {type:'logout'}
@@ -52,7 +52,11 @@ const Login =() =>{
          dispatch({type:'logout'})
        }, 2000 );
    },[])
-
+   const login= ()=>{
+      dispatch(
+         {type:'login',payload:{username:'cvk',nombre:'vidal'}}
+      );
+   }
    if(state.validando){
       return(
       <>
@@ -74,7 +78,7 @@ const Login =() =>{
        {
          (state.token)
          ?<button className="btn btn-danger">Logout</button>
-         : <button className="btn btn-primary">login</button>
+         : <button className="btn btn-primary" onClick={login}>login</button>
        }
        <div className="container mt-2">
        <hr />
