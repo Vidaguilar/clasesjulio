@@ -7,7 +7,7 @@ import Contadorconhooks from "./components/05-contadorConHooks";
 import Login  from "./components/0006-Login";
 const App = () =>{
 return(
-  <div className="mt-2">
+  <div className="container mt-2">
   <h1>Inicio Con Typescript</h1>
  <hr/>
   
